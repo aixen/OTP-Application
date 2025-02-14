@@ -2,6 +2,7 @@
 ## Installation
     - Requirements
         - PHP 8.2 or up
+            - Laravel 10
         - MySQL 8.4
         - SMTP mailer
             - on this I use mailtrap for debugging purposes
