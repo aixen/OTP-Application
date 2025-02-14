@@ -17,6 +17,15 @@
     - docker-compose up -d nginx workspace php-fpm redis redis-webui mysql
     - docker-compose exec workspace bash
         - art migrate
+
+    - update .env of application
+        - APP_URL = otp.local
+    - For Window go to
+        - Windows/System32/drivers/etc
+        - open host add.
+            - 127.0.0.1 otp.local
+
+    - now you can start the application with otp.local as demo.
 ## Testing
     - docker-compose exec workspace bash
     - cd <repository-directory>
@@ -25,6 +34,7 @@
     - TODO:
         - SMS notification for the OTP verification
         - index in the database to handle hundreds of million data.
+        - Queue for sending otp verification.
 ## Additional Features
     - Added Email Notification for the OTP verification.
     - Auto Delete OTP once verified
