@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('otps', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('users');           ;
+            $table->foreignId('user_id')->references('id')->on('users');
             $table->string('code');
             $table->enum('type', ['email', 'sms']);
             $table->timestamp('verified_at')->nullable();
