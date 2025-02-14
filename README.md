@@ -1,5 +1,10 @@
 # OTP Verification System
 ## Installation
+    - Requirements
+        - PHP 8.2 or up
+        - MySQL 8.4
+        - SMTP mailer
+            - on this I use mailtrap for debugging purposes
     - Authentication
         - Email: demo@mail.com
         - Password: test12345
